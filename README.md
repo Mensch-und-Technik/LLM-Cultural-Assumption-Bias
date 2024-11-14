@@ -4,6 +4,12 @@
 
 Install Python 3.11.x from [here](https://www.python.org/downloads/release/python-3119/)
 
+Get an API key from openai with Model-Write rights. Create an `.env` file **inside this directory** and put your key next to `OPENAI_API_KEY`:
+
+```env
+OPENAI_API_KEY="<your key>"
+```
+
 ## Create an environment
 
 Create the environment **inside this directory**.
