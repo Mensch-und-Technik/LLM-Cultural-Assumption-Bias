@@ -1,6 +1,32 @@
 # LLM Cultural Assumption Bias
 
+## Requirements
+
+Install Python 3.11.x from [here](https://www.python.org/downloads/release/python-3119/)
+
+## Create an environment
+
+Create the environment **inside this directory**.
+
+```sh
+python -m venv .venv
+```
+
+activate it like so:
+
+```sh
+& .\.venv\Scripts\activate
+```
+
+or like this on Linux/Max:
+
+```sh
+. ./.venv/bin/activate
+```
+
 ## Usage
+
+Make sure your environment is activated, it should say the name of the environment in you terminal: `(.venv) yourpath>`
 
 Install the required libraries with:
 
@@ -8,7 +34,7 @@ Install the required libraries with:
 pip install -r requirements.txt
 ```
 
-To query GPT3.5 use the `CS_gpt3_query.py` script, it takes just one argument, which should be a file containing all queries.
+To query GPT3.5 use the `CA_gpt3_query.py` script, it takes just one argument, which should be a file containing all queries, the `breakfast_prompts.csv` is an example.
 
 ```sh
 python CA_gpt3_query.py breakfast_prompts.tsv
